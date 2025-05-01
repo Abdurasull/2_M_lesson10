@@ -1,0 +1,39 @@
+[
+    {
+        "userId": 1,
+        "todos": [
+            {
+                "id": 1,
+                "title": "aaaaaaaaaaaaaaaa",
+                "completed": false,
+                "createdAt": "2023-07-16T10:00:00.000Z",
+                "updatedAt": null
+            }
+        ]
+    },
+    {
+        "userId": 2,
+        "todos": [
+            {
+                "id": 2,
+                "title": "kjhbkjhbjh",
+                "completed": false
+            },
+            {
+                "id": 1,
+                "title": "khbkjhb",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "userId": 3,
+        "todos": [
+            {
+                "id": 1,
+                "title": "salom",
+                "completed": false
+            }
+        ]
+    }
+]
