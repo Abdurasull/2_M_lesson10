@@ -1,20 +1,50 @@
 [
     {
         "username": "Ass@gmail.com",
-        "email": "abdurasulsalimov94@gmail.com",
+        "email": "Abdurasulsalimov94@gmail.com",
         "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
         "id": 1
     },
     {
         "username": "Ass@gmail.com",
-        "email": "abdurasulsalfgimov94@gmail.com",
+        "email": "Abdurasulsalimjov94@gmail.com",
         "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
         "id": 2
     },
     {
-        "username": "Ass@gmail.com",
-        "email": "abdurasulsaalimov94@gmail.com",
+        "username": "Abdurasul",
+        "email": "abd@gmail.com",
         "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
         "id": 3
+    },
+    {
+        "username": "Abdurasul",
+        "email": "aubd@gmail.com",
+        "password": "bcb15f821479b4d5772bd0ca866c00ad5f926e3580720659cc80d39c9d09802a",
+        "id": 4
+    },
+    {
+        "username": "Ass@gmail.com",
+        "email": "abdurasulsalimov94@gmail.com",
+        "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+        "id": 5
+    },
+    {
+        "username": "Ass@gmail.com",
+        "email": "abdurasulasalimov94@gmail.com",
+        "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+        "id": 6
+    },
+    {
+        "username": "Ass@gmail.com",
+        "email": "Ass@gmail.com",
+        "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+        "id": 7
+    },
+    {
+        "username": "Ass@gmail.com",
+        "email": "abdurasulsalimghov94@gmail.com",
+        "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+        "id": 8
     }
 ]

@@ -1,63 +1,4 @@
-<!-- 
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= title %></title>
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/userPage.css">
-    
-</head>
-
-<body>
-    <div class="container">
-        <div class="user-info">
-            <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="User Avatar" />
-            <div>
-                <h2 class="js-username">Abdurasul</h2>
-                <div class="js-bio note">(Bio ni o‘zgartirish faqat JavaScript bilan ishlaydi)</div>
-            </div>
-        </div>
-        <div class="filter-buttons">
-            <button id="allBtn">Barchasi</button>
-            <button id="activeBtn">Faollar</button>
-            <button id="noActiveBtn">No-faollar</button>
-        </div>
-        <% if(todos.length === 0) { %>
-            <h2 class="note">Sizda hali hech qanday vazifa yo‘q</h2>
-        <% } else { %>
-        <% todos.forEach(todo => { %>
-        <div class="todo-actions">
-            <h2 class="js-todos"><%= todo.title %> </h2>
-            <div>
-                <button data-idDelete="<%= todo.id %>" class="delete">O‘chirish</button>
-                <button data-idEdit="<%= todo.id %>" class="edit" >Tahrirlash</button>
-            </div>
-        </div>
-        <% }) %>
-        <% } %>
-        <form class="add-todo">
-            <textarea class="js-new-todo" name="newTodo" placeholder="Vazifani yozing..." rows="3" ></textarea>
-            <button class="js-add-todo" >Vazifa qo‘shish</button>
-        </form>
-    </div>
-
-    <div class="modal" id="editModal">
-        <div class="modal-content">
-            <h3>Vazifani tahrirlash</h3>
-            <textarea rows="3" placeholder="Tavsif yoki ma’lumot..."></textarea>
-            <div class="modal-actions">
-                <button class="save">Saqlash</button>
-                <button class="cancel">Bekor qilish</button>
-            </div>
-        </div>
-    </div>
-    
-</body>
-<script src="/js/userPage.js" ></script>
-</html> -->
 <!DOCTYPE html>
 <html lang="uz">
 
@@ -73,10 +14,21 @@
 <body>
     <div class="container">
         <div class="profile">
-            <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="User" />
-            <div class="profile-info">
-                <h2 class="js-username">Foydalanuvchi Nomi</h2>
-                <p class="js-bio note">foydalanuvchi@email.com</p>
+            <div class="profile-content">
+                <div>
+                    <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="User" />
+                    <div class="profile-info">
+                        <h2 class="js-username">Foydalanuvchi Nomi</h2>
+                        <p class="js-bio note">foydalanuvchi@email.com</p>
+                    </div>
+                </div>
+                <button class="logout-btn" title="Profildan chiqish" >
+                    <!-- Logout SVG Icon (Heroicons style) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 002 2h3a2 2 0 002-2V7a2 2 0 00-2-2h-3a2 2 0 00-2 2v1" />
+                    </svg>
+                </button>
             </div>
         </div>
 
@@ -86,12 +38,13 @@
         </form>
 
         <div class="filter-buttons">
-            <button>Barchasi</button>
-            <button>Faollar</button>
-            <button>Bajarilganlar</button>
+            <button class="All_todos">Barchasi</button>
+            <button class="active_todos">Faollar</button>
+            <button class="no_active_todos">Bajarilganlar</button>
         </div>
 
         <div class="todo-list">
+           
             <% if(todos.length===0) { %>
                 <h2 class="note">Sizda hali hech qanday vazifa yo‘q</h2>
             <% } else { %>
@@ -100,12 +53,20 @@
                 <div>
                     <p><%= todo.title %></p>
                     <div class="timestamps">
-                        <span>Yaratilgan: todo.createdAt</span><br>
-                        <span>Yangilangan: todo.updatedAt</span>
+                        <span>Yaratilgan: <%= todo.createdAt %></span><br>
+                        <% if(todo.updatedAt) { %>
+                            <span>Yangilangan: <%= todo.updatedAt %></span><br>
+                        <% } else { %>
+                            <span>Yangilangan: yo‘q</span><br>
+                        <% } %>
                     </div>
                 </div>
                 <div class="actions">
-                    <input data-idCheck="<%= todo.id %>" type="checkbox" title="Bajarildi">
+                    <% if(!todo.completed) { %>
+                        <input id="mycheckbox" data-iddone="<%= todo.id %>" type="checkbox" >
+                    <% } else { %>
+                        <input id="mycheckbox" data-iddone="<%= todo.id %>" type="checkbox" checked>
+                    <% } %>
                     <button class="edit" data-idEdit = "<%= todo.id %>">✏️</button>
                     <button data-idDelete="<%= todo.id %>">❌</button>
                 </div>

@@ -19,6 +19,7 @@ app.use(express.json());
 app.use("/api", mainRouter);
 
 app.use(viewsRouter);
+app.use((req, res) => res.render("error.ejs", {title: "Url not found!"}));
 
 app.listen(PORT, () => console.log(`server started at http://localhost:${PORT}`));
 

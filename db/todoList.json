@@ -4,9 +4,16 @@
         "todos": [
             {
                 "id": 1,
-                "title": "aaaaaaaaaaaaaaaa",
+                "title": "Adashib ketdim",
                 "completed": false,
-                "createdAt": "2023-07-16T10:00:00.000Z",
+                "createdAt": "2025:05:01 20:38",
+                "updatedAt": "2025:05:01 20:38"
+            },
+            {
+                "id": 2,
+                "title": "Assalomu alaykum hammaga",
+                "completed": true,
+                "createdAt": "2025:05:01 20:53",
                 "updatedAt": null
             }
         ]
@@ -15,14 +22,18 @@
         "userId": 2,
         "todos": [
             {
-                "id": 2,
-                "title": "kjhbkjhbjh",
-                "completed": false
+                "id": 1,
+                "title": "jhgcjh",
+                "completed": false,
+                "createdAt": "2025:05:01 20:53",
+                "updatedAt": null
             },
             {
-                "id": 1,
-                "title": "khbkjhb",
-                "completed": false
+                "id": 2,
+                "title": "ggggggggggg",
+                "completed": true,
+                "createdAt": "2025:05:01 20:54",
+                "updatedAt": null
             }
         ]
     },
@@ -31,8 +42,112 @@
         "todos": [
             {
                 "id": 1,
-                "title": "salom",
-                "completed": false
+                "title": "salom bacha",
+                "completed": "",
+                "createdAt": "2025:05:01 21:02",
+                "updatedAt": null
+            },
+            {
+                "id": 2,
+                "title": "qannaysan",
+                "completed": true,
+                "createdAt": "2025:05:01 21:02",
+                "updatedAt": null
+            }
+        ]
+    },
+    {
+        "userId": 4,
+        "todos": [
+            {
+                "id": 1,
+                "title": "kjgvjhg",
+                "completed": true,
+                "createdAt": "2025:05:01 21:14",
+                "updatedAt": null
+            }
+        ]
+    },
+    {
+        "userId": 5,
+        "todos": [
+            {
+                "id": 1,
+                "title": "khbkjhb",
+                "completed": true,
+                "createdAt": "2025:05:01 21:43",
+                "updatedAt": null
+            }
+        ]
+    },
+    {
+        "userId": 6,
+        "todos": [
+            {
+                "id": 1,
+                "title": "esfgfd",
+                "completed": true,
+                "createdAt": "2025:05:01 21:50",
+                "updatedAt": null
+            },
+            {
+                "id": 2,
+                "title": "sadcsadcsdcsdzc",
+                "completed": "",
+                "createdAt": "2025:05:01 21:50",
+                "updatedAt": null
+            },
+            {
+                "id": 3,
+                "title": "Assalomu alaykum hammaga",
+                "completed": "",
+                "createdAt": "2025:05:01 21:50",
+                "updatedAt": null
+            }
+        ]
+    },
+    {
+        "userId": 7,
+        "todos": [
+            {
+                "id": 1,
+                "title": "a",
+                "completed": true,
+                "createdAt": "2025:05:02 08:54",
+                "updatedAt": null
+            },
+            {
+                "id": 2,
+                "title": "salomlar",
+                "completed": true,
+                "createdAt": "2025:05:02 09:40",
+                "updatedAt": null
+            },
+            {
+                "id": 3,
+                "title": "Qannay",
+                "completed": true,
+                "createdAt": "2025:05:02 09:40",
+                "updatedAt": null
+            }
+        ]
+    },
+    {
+        "userId": 8,
+        "todos": [
+            {
+                "id": 1,
+                "title": "mmmmmmmm",
+                "completed": "",
+                "createdAt": "2025:05:02 08:21",
+                "updatedAt": "2025:05:02 08:21"
+            },
+            {
+                "id": 2,
+                "title": "jhbjmh",
+                "completed": "",
+                "createdAt": "2025:05:02 08:21",
+                "updatedAt": null
             }
         ]
     }

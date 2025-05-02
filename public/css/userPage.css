@@ -111,6 +111,9 @@ body {
 .actions input[type="checkbox"] {
     width: 18px;
     height: 18px;
+    checked {
+        background: #007bff;
+    }
 }
 .modal {
     display: none;
@@ -174,6 +177,27 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
+/* -------------- */
+.logout-btn {
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logout-btn:hover {
+    transform: scale(1.1);
+}
+
+.logout-btn:active {
+    transform: scale(0.95);
+}
+
+.logout-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
 @media (max-width: 600px) {
     .todo-form {
         flex-direction: column;
@@ -188,4 +212,10 @@ body {
     .filter-buttons {
         flex-direction: column;
     }
+}
+
+.profile-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
