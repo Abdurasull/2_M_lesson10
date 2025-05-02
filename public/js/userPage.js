@@ -121,6 +121,7 @@ if(window.localStorage.getItem("user")) {
         if(evt.target.dataset.iddone){
             const todoId = evt.target.dataset.iddone;
             doneTodo({todoId: todoId, userId: JSON.parse(window.localStorage.getItem("user")).userId});
+            
             window.location.href = `/userPage/${JSON.parse(window.localStorage.getItem("user")).userId}`;
         }
     });
